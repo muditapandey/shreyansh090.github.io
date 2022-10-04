@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>test</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class = "left-nav">
+				<a class=  "logo" href="#">Logo</a>
+				<ul>
+					<li><a class = "bl" href="#">Home</a>
+					<li><a class = "tq" href="#">Projects</a>
+					</li>
+				</ul>
+			</div>
+			<ul>
+				<li><a class = "bl" href="#">Work.</a></li>
+				<li><a class = "tq" href="#">Resume</a></li>
+				<li><a class = "tq" href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class= "banner">
+			<img class= "bg-figure" src="bg_figure.png">
+			<div class="bg-text">
+			<div class= "bg-text-hello">Hello! I am</div>
+			<img class= "bg-text-img" src="bg_text.png">
+			<div class= "bg-text-info"><p>A 4th year undergrad. currently pursuing my </p><p>bachelor's in design from NIFT Patna.</p></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.addEventListener("scroll", ()=>{
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky",window.scrollY > 0);
+			})
+		</script>
+	</body>
+
+	</html>

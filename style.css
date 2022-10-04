@@ -107,13 +107,15 @@ header ul li{
 	position: absolute;
 	font-size: 1.7vw;
 	left: -1%;
-	top :-6.8%;
+	/*top :-7%;*/
+	transform: translateY(-120%);
 	color: #0E6E83;
 }
 .bg-text-img{
 	position: absolute;
 	left: 8%;
-	top :-10%;
+	/*top :-7%;*/
+	transform: translateY(-78%);
 	width: 15%;	
 }
 .bg-text-info{
@@ -131,4 +133,19 @@ header ul li{
 .sticky .logo,
 .sticky ul li a {
 	color: #0E6E83;
+}
+
+.icon-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;	  
+  top: 55%;
+  left: 95%;
+  transform: translateY(-50%);
+}
+.icon-bar a{
+  margin: 13%;
+}
+.icon-bar-img{
+	width: 97%;
 }
